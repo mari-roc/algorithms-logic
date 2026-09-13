@@ -5,7 +5,7 @@ public class q3 {
     // que calcule a media ponderada de 3 números reais (A,B e C)
     // mostre o resultado onde os pesos serão (2,3,5)
     
-    public static void main(String[] args) {
+    public static void main() {
         Scanner scanner = new Scanner(System.in);
         double A, B, C, media;
 
@@ -20,7 +20,8 @@ public class q3 {
 
         media = (A * 2 + B * 3 + C * 5) / 10;
 
-        System.out.println("A média ponderada é: " + media);
+        System.out.printf("A média ponderada é: %.2f%n", media);
     }
-
 }
+
+
