@@ -11,7 +11,7 @@ graph LR
     B --> C[/A/]
     C --> D[/B/]
     D --> E[/C/]
-    E --> F[media=((A*2)+(B*3)+(C*5))/10]
+    E --> F["media=(A*2 + B*3 + C*5)/10"]
     F --> G[/media/]
     G --> H([Fim])
 ```
