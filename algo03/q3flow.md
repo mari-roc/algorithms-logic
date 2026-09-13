@@ -1,10 +1,9 @@
-## Q3 flowchart
+# Q3 flowchart
 
 Faça um programa em java e seu respectivo fluxograman que calcule a media ponderada de 3 números reais (A,B e C) mostre o resultado onde os pesos serão (2,3,5)
 
-------
-Média ponderada de 3 valores
-------
+## Média ponderada de 3 valores
+
 ```mermaid
 graph LR
     A([Inicio]) --> B[A,B,C,media]
