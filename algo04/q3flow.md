@@ -8,16 +8,18 @@ Faça um programa em java e seu respectivo fluxograma que dada 2 notas (p1 e p2)
 
 ```mermaid
 graph LR
-    A([Inicio]) --> B[p1, p2, F, media]
+    A([Inicio]) --> B[p1, p2, p3, F, media]
     B --> C[/p1/]
     C --> D[/p2/]
     D --> E["media=p1+p2/2"]
-    E --> F{"media>=6?"}
-    F -- Sim --> G{"F<=20?"}
-    G -- Sim --> H[Aprovado]
-    G -- Não --> I[Reprovado]
-    F -- Não --> I
-    H --> J([Fim])
-    I --> J
-
+    E --> F{"media>=6? e F<=20?"}
+    F -- Sim --> G[/Aprovado/]
+    F -- Não --> H[/Reprovado/]
+    H --> I{"Reprovado por falta?"}
+    I -- Não --> J["p3=12-(p1+p2)"]
+    I -- Sim --> K[/Reprovado por falta/]
+    J --> L[/p3/]
+    G --> M([Fim])
+    K --> M([Fim])
+    L --> M([Fim])
 ```
