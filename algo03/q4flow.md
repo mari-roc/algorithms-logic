@@ -7,11 +7,12 @@ Quantidade de tempo e combustível par uma viagem
 ----
 ```mermaid
 graph LR
-    A([Inicio]) --> B[s,v,c,t,L]
-    B --> C[/s/]
-    C --> D[/v/]
-    D --> E[/c/]
-    E --> F["t=s"]
-    F --> G[/media/]
-    G --> H([Fim])
+    A([Inicio]) --> B[dist,vm,comb,temp,L]
+    B --> C[/dist/]
+    C --> D[/vm/]
+    D --> E[/comb/]
+    E --> F["temp=dist/vm"]
+    F --> G["L=dist/comb"]
+    G --> H[/temp, L/]
+    H --> I([Fim])
 ```
