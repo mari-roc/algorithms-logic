@@ -6,15 +6,14 @@ Faça um programa em java e seu respectivo fluxograman que calcule a media ponde
 Média ponderada de 3 valores
 ------
 ```mermaid
----
-id: c4064760-01a1-483b-966b-fce73451419f
----
+
 graph LR
-    A(Inicio) --> B[A,B,C,media]
-    B --> C[\A\]
-    C --> D[\B\]
-    D --> E[\C\]
-    E --> F["media=((A*2)+(B*3)+(C*5))/10"]
-    F --> G[\media\]
-    G --> H(Fim)
+    A([Inicio]) --> B[A,B,C,media]
+    B --> C[/A/]
+    C --> D[/B/]
+    D --> E[/C/]
+    E --> F[media=((A*2)+(B*3)+(C*5))/10]
+    F --> G[/media/]
+    G --> H([Fim])
+end
 ```
