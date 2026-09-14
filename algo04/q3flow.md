@@ -15,7 +15,7 @@ graph LR
     G -- Sim --> I[/Aprovado/]
     G -- Não --> H[/Reprovado/]
     H --> J{"Reprovado por falta?"}
-    J -- Não --> K["p3=12-(p1+p2)"]
+    J -- Não --> K["p3=18-(p1+p2)"]
     J -- Sim --> L[/Reprovado por falta/]
     K --> M[/p3/]
     M --> N([Fim])
