@@ -9,15 +9,16 @@ graph LR
     A([Inicio]) --> B[p1, p2, p3, F, media]
     B --> C[/p1/]
     C --> D[/p2/]
-    D --> E["media=p1+p2/2"]
-    E --> F{"media>=6? e F<=20?"}
-    F -- Sim --> G[/Aprovado/]
-    F -- Não --> H[/Reprovado/]
-    H --> I{"Reprovado por falta?"}
-    I -- Não --> J["p3=12-(p1+p2)"]
-    I -- Sim --> K[/Reprovado por falta/]
-    J --> L[/p3/]
-    G --> M([Fim])
-    K --> M([Fim])
-    L --> M([Fim])
+    D --> E[/F/]
+    E --> F["media=p1+p2/2"]
+    F --> G{"media>=6? e F<=20?"}
+    G -- Sim --> I[/Aprovado/]
+    G -- Não --> H[/Reprovado/]
+    H --> J{"Reprovado por falta?"}
+    J -- Não --> K["p3=12-(p1+p2)"]
+    J -- Sim --> L[/Reprovado por falta/]
+    K --> M[/p3/]
+    M --> N([Fim])
+    L --> N([Fim])
+    I --> N([Fim])
 ```
