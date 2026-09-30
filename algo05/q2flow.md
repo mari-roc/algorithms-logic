@@ -13,9 +13,10 @@ graph LR
     F -- Sim --> G["Projeto Rejeitado pela Auditoria."]
     F -- Não --> H["etapas=VT/2"]
     H --> I{"etapas<50000?"}
-    I -- Não --> J["etapas=(VT+AF)/2"]
+    I -- Não --> J[/AF/]
+    J --> O["etapas=(VT+AF)/2"]
     I -- Sim --> K["Projeto Aprovado."]
-    J --> L{"etapas<50000?"}
+    O --> L{"etapas<50000?"}
     L -- Sim --> M["Projeto Aprovado com Recursos Extras."]
     L -- Não --> N["Projeto Rejeitado por Estourar o Orçamento."]
     G --> P([Fim])
