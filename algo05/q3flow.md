@@ -15,8 +15,8 @@ graph LR
     F -- Não --> H["media=(t1 + t2)/2"]
     H --> I{"media<=37.5?"}
     I -- Não --> J[/t3/]
-    J -- Sim --> K["Paciente Liberado / Triagem Verde"]
-    K --> O["media=(t1+t2+t3)/3"]
+    I -- Sim --> K["Paciente Liberado / Triagem Verde"]
+    J --> O["media=(t1+t2+t3)/3"]
     O --> L{"media<=37.5?"}
     L -- Não --> M["Paciente em Observação"]
     L -- Sim --> N["Paciente Medicado e Liberado"]
