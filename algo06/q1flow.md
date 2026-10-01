@@ -19,7 +19,6 @@ O programa deverá informar a categoria do atleta ou informar que ele não pode 
 
 ```mermaid
 graph LR
-    flowchart TD
     A([Início]) --> B[/Digite a idade/]
     B --> C{Idade <= 5?}
     C -- Sim --> D[Não pode competir]

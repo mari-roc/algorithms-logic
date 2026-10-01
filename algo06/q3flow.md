@@ -22,7 +22,6 @@ Caso o usuário informe uma opção que não existe no menu, o programa deverá 
 
 ```mermaid
 graph LR
-    flowchart TD
         A([Início]) --> B[/Informar depósito inicial/]
         B --> C[Saldo = depósito inicial]
         C --> D[/Exibir menu<br/>1 - Consultar saldo<br/>2 - Depositar<br/>3 - Sacar<br/>4 - Sair/]

@@ -29,7 +29,6 @@ O valor final da multa.
 
 ```mermaid
 graph LR
-    flowchart TD
         A([Início]) --> B[/Digite a velocidade permitida/]
         B --> C[/Digite a velocidade registrada/]
         C --> D[/Digite o valor da multa normal/]
