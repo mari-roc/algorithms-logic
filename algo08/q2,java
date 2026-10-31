@@ -1,0 +1,52 @@
+package algo08;
+import java.util.Scanner;
+
+public class q2 {
+    // Busca e Frequência Desenvolva um programa em Java que leia um vetor de 8 posições com números inteiros. Depois, solicite ao usuário um número inteiro para ser buscado no vetor. O programa deve informar:
+    // Se o número está ou não presente no vetor.
+    // Quantas vezes ele aparece (frequência).
+    // Em quais posições (índices) ele foi encontrado.
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int[] vetor = new int[8];
+        int frequencia = 0;
+        boolean encontrado = false;
+
+        // Leitura dos números
+        for (int i = 0; i < 8; i++) {
+            System.out.print("Digite o " + (i + 1) + "º número: ");
+            vetor[i] = scanner.nextInt();
+        }
+
+        // Leitura do número a ser buscado
+        System.out.print("Digite o número a ser buscado: ");
+        int numeroBuscado = scanner.nextInt();
+
+        // Busca e contagem da frequência
+        for (int i = 0; i < 8; i++) {
+            if (vetor[i] == numeroBuscado) {
+                frequencia++;
+                encontrado = true;
+            }
+        }
+
+        // Exibição dos resultados
+        if (encontrado) {
+            System.out.println("O número " + numeroBuscado + " está presente no vetor.");
+            System.out.println("Ele aparece " + frequencia + " vez(es).");
+            System.out.print("Está nas posições: ");
+            for (int i = 0; i < 8; i++) {
+                if (vetor[i] == numeroBuscado) {
+                    System.out.print(i + " ");
+                }
+            }
+            System.out.println();
+        } else {
+            System.out.println("O número " + numeroBuscado + " não está presente no vetor.");
+        }
+    }
+}
+
+    
+}
